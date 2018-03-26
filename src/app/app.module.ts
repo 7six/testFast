@@ -3,6 +3,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
+import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 
 import { AppRouterModule } from './app-router/app-router.module';
 
@@ -25,6 +26,8 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     AppRouterModule,
     HttpClientModule,
+    CollapseModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [
     Title, 

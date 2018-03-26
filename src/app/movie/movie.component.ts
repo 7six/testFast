@@ -34,9 +34,12 @@ export class MovieComponent{
 
 	 	this.titleService.setTitle('teste FastShop - Filmes');
 
-
 	 	if(+this.route.snapshot.queryParams["page"]){
 	 		this.page = +this.route.snapshot.queryParams["page"];
+	 	}
+
+	 	if(+this.route.snapshot.queryParams["selectedGenres"]){
+	 		this.selectedGenres = [this.route.snapshot.queryParams["selectedGenres"]];
 	 	}
 
 	 	this.getMovies();

@@ -2,7 +2,7 @@
 	<div class="container">
 
 		<div class="col-xs-12 movies-filters">
-			<div class="col-xs-12 col-sm-3">
+			<div class="col-xs-12 col-sm-3 no-padding">
 				<div class="form-group">
 					<label class="" for="">Filtrar por gênero</label>
 					<select (change)="selectGenre($event.target.value)" class="form-control">
@@ -17,17 +17,17 @@
 			
 		</div>
 
-		<div class="col-xs-12 movies-list">
+		<div class="col-xs-12 col-sm-12 col-md-12 movies-list">
 
-			<div *ngFor="let movie of movies" class="col-xs-12 col-sm-6 movie-item">
+			<div *ngFor="let movie of movies" class="col-xs-12 col-sm-6 col-md-6 movie-item">
 				<div class="content">
-					<div class="col-xs-4 col-sm-4 no-padding image">
+					<div class="col-xs-5 col-sm-5 col-md-4 no-padding image">
 						<a routerLink="/filme/{{ toSlug(movie.id + '-' + movie.title) }}" class="" title="{{ movie.title }}">
 							<img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ movie.poster_path }}" alt="{{ movie.title }}" class="img-responsive">	
 						</a>
 					</div>
 
-					<div class="col-xs-8 col-sm-8 no-padding description">
+					<div class="col-xs-7 col-sm-7 col-md-8 no-padding description">
 						<h2 class="title">{{ movie.title}}</h2>
 
 						<div class="release-date">
@@ -48,9 +48,9 @@
 		</div>
 
 		<div class="col-xs-12 movies-pages">
-			<div class="col-xs-6 info"></div>
+			<div class="col-xs-12 col-sm-12 col-md-6 info"></div>
 
-			<div class="col-xs-6 paginator">
+			<div class="col-xs-12 col-sm-12 col-md-6 paginator">
 				<button class="previous" (click)="previousPage()">
 					<span class="glyphicon glyphicon-arrow-left"></span>
 				</button>

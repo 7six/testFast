@@ -1,21 +1,15 @@
-<!--button (click)="goBack()">Voltar</button -->
-
 <section id="movie" *ngIf="movie">
 	<div class="movie-header">
 		<div class="container">
 
-			<div class="col-xs-3 col-sm-4 no-padding image">
-				<img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{ movie.poster_path }}" alt="{{ movie.title }}" class="img-responsive">	
+			<div class="col-xs-12 col-sm-4 no-padding image">
+				<img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{ movie.poster_path }}" alt="{{ movie.title }}" class="img-responsive center-block">	
 			</div>
 
-			<div class="col-xs-9 col-sm-8 no-padding description">
+			<div class="col-xs-12 col-sm-8 no-padding description">
 				<h1 class="title">
-				{{ movie.title}} <span>({{ movie.release_date | date: 'yyyy'}})</span>
+					{{ movie.title}} <span>({{ movie.release_date | date: 'yyyy'}})</span>
 				</h1>
-
-				<div class="actions">
-					Ações
-				</div>
 
 				<p class="overview">
 					<span>Sinopse: </span> <br>

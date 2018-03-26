@@ -2,6 +2,10 @@
 	background: #DDD;
 }
 
+.movies-filters{
+	padding: 10px 30px;
+}
+
 .movies-filters label{
 	margin-top: 50px;
 	font-weight: 500;	
@@ -41,15 +45,15 @@
 
 .movie-item .overview{
 	width: 100%;
-    font-size: 12px;
-    color: #555;
-    line-height: 18px;
-    max-height: 87px;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-size: 12px;
+	color: #555;
+	line-height: 18px;
+	max-height: 87px;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	padding: 0 15px;
 }
 
@@ -79,4 +83,72 @@
 
 .movies-pages .paginator .next{
 	margin-right: 15px;
+}
+
+
+@media(max-width: 768px) {
+	.movies-filters{
+		padding: 10px 0;
+	}
+
+	.movies-list{
+		padding: 0;
+	}
+	.movie-item{
+		margin-bottom: 0px;
+		padding: 10px 0;
+	}
+
+	.movie-item .description{
+		height: auto;
+	}
+
+	.movie-item .view-more{
+		border-top: 0;
+		position: relative;
+		font-size: 14px;
+	}
+
+	.movies-pages .paginator{
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.movies-pages .paginator .next{
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	
+
+}
+
+
+@media(min-width: 769px) and (max-width: 991px) {
+
+	.movies-list{
+		padding: 0;
+	}
+
+	.movie-item .description{
+		height: auto;
+	}
+
+
+	.movie-item .view-more{
+		border-top: 0;
+		position: relative;
+		font-size: 14px;
+	}
+
+	.movies-pages .paginator{
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.movies-pages .paginator .next{
+		margin-left: 10px;
+		margin-right: 0;
+	}
 }

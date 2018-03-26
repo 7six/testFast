@@ -15,6 +15,9 @@ export class MovieService {
 
 	constructor(private http: HttpClient) {}
 
+	/**
+	 * Busca os filmes
+	 */
 	getMovies(page, genres){
 		let resource = "/discover/movie";	
 		return this.http.get<MoviesInterface>(`${this.providerUrl + resource}?
@@ -25,6 +28,9 @@ export class MovieService {
 			${(genres)? '&with_genres=' + genres.join(): ''}`);
 	}
 
+	/**
+	 * Busca um filme pelo ID
+	 */
 	getMovieById(movieId: number){
 		let resource = "/movie/" + movieId;	
 		return this.http.get<MovieInterface>(`${this.providerUrl + resource}?
@@ -32,6 +38,9 @@ export class MovieService {
 			&language=${this.providerLanguage}`);
 	}
 
+	/**
+	 * Busca os Gêneros
+	 */
 	getGenres(){
 		let resource = "/genre/movie/list";	
 		return this.http.get<GenresInterface>(`${this.providerUrl + resource}?
