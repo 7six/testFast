@@ -1,0 +1,46 @@
+.movie-header{
+	padding: 20px;
+	background: #004393;
+	color: #FFF;
+	
+}
+
+.movie-header .title{
+	width: 100%;
+	float: left;
+	font-weight: 700;
+
+
+}
+
+.movie-header .title span{
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.movie-header .actions{
+	width: 100%;
+	float: left;
+	padding: 20px 20px;
+	border: 1px solid #FFF;
+	margin: 10px 0;
+}
+
+.movie-header .overview{
+	width: 100%;
+	float: left;
+	line-height: 25px;
+}
+
+.movie-header .overview span{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.btn-go-back{
+	padding: 7px 10px;
+	background: none;
+	color: #FFF;
+	border: 1px solid #FFF;	
+}
+

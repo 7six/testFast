@@ -1,0 +1,82 @@
+#movies{
+	background: #DDD;
+}
+
+.movies-filters label{
+	margin-top: 50px;
+	font-weight: 500;	
+}
+
+.movie-item{
+	margin-bottom: 25px;
+}
+
+.movie-item .content{
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	float: left;
+	width: 100%;
+	background: #FFF;
+}
+
+.movie-item .image{
+}
+
+.movie-item .description{
+	position: relative;
+	height: 260px;
+}
+
+.movie-item .title{
+	font-size: 16px;
+	padding: 0 15px;
+	font-weight: bold;
+	color: #444;
+}
+
+.movie-item .release-date{
+	font-size: 13px;
+	padding: 0 15px;
+	color: #777;
+}
+
+.movie-item .overview{
+	width: 100%;
+    font-size: 12px;
+    color: #555;
+    line-height: 18px;
+    max-height: 87px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	padding: 0 15px;
+}
+
+.movie-item .view-more{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 14px;
+	color: #555;
+	border-top: 1px solid #DDD;
+	text-decoration: none;
+}
+
+.movies-pages .paginator{
+	text-align: right;
+}
+
+.movies-pages .paginator .previous, .movies-pages .paginator .next{
+	border-radius: 50px;
+	background: #222;
+	height: 35px;
+	width: 35px;
+	color: #FFF;
+	border: none;
+}
+
+.movies-pages .paginator .next{
+	margin-right: 15px;
+}

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.no-padding{
+	padding: 0;
+}
+
+
+a, a:hover, a:focus, a:active, button{
+    outline: none;
+    outline-offset: 0;
+}
